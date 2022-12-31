@@ -4,6 +4,7 @@ const { dbConnection } = require('./database/config');
 
 const path = require('path');
 const logger = require("morgan");
+const PORT = process.env.PORT || 4000;
 
 //CORS
 const cors = require('cors');
@@ -13,18 +14,10 @@ require('dotenv').config();
 
 app.use(logger("dev"));
 
-
 //read and parse body
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors())
-
-
-const PORT = process.env.PORT || 4000;
-
-// const app = express();
-
-// app.use(logger("dev"));
 
 //database
 dbConnection();
