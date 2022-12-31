@@ -39,7 +39,7 @@ dbConnection();
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/events', require('./routes/events'));
 
-app.use(express.static(path.join(__dirname, "./frontend")));
+app.use(express.static(path.join(__dirname, "./frontend/index.html")));
 
 
 //redirect to index.html   //this is for the react app
