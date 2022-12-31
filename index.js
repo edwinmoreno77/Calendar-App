@@ -39,7 +39,7 @@ dbConnection();
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/events', require('./routes/events'));
 
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "./frontend")));
 
 
 //redirect to index.html   //this is for the react app
@@ -50,7 +50,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.get("*", function (_, res) {
     res.sendFile(
-        path.join(__dirname, "./public/index.html"),
+        path.join(__dirname, "./frontend/index.html"),
         function (err) {
             if (err) {
                 res.status(500).send(err);
