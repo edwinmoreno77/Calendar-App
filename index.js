@@ -19,6 +19,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors())
 
+// Configuración de CORS
+const corsOptions = {
+    origin: process.env.ALLOWED_ORIGIN || '*', // Cambia "*" a un origen específico en producción
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+};
+app.use(cors(corsOptions));
+app.options('*', cors(corsOptions)); // Manejo de preflight
+
 //database
 dbConnection();
 
