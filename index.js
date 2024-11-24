@@ -37,14 +37,14 @@ app.use('/api/events', require('./routes/events'));
 
 //to deploy react app whith nodejs in heroku
 // app.use(express.static('public'));
-app.use(express.static(path.join(__dirname, "./frontend/dist")));
+app.use(express.static(path.join(__dirname, "./frontend/build")));
 
 //to deploy react app whith nodejs in heroku
 // app.get('*', (req, res) => {
 //     res.sendFile(__dirname + '/public/index.html');
 // });
 app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "./frontend/dist/index.html"));
+    res.sendFile(path.join(__dirname, "./frontend/build/index.html"));
 });
 
 app.listen(PORT, () => {
