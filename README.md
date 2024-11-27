@@ -53,10 +53,10 @@ run `npm install ` to rebuild node modules.
 
 ### Set environment variables to a Backend file .env
 
-- PORT=puerto (por defecto: 4000)
-- DB_CNN=tu_uri_de_mongo
-- SECRET_JWT_SEED=tu_secreto_jwt
-- ALLOWED_ORIGIN=tu_origen_permitido
+- PORT= (default: 4000)
+- DB_CNN=uri_mongo
+- SECRET_JWT_SEED=you_secret_jwt
+- ALLOWED_ORIGIN=you_allowed_origin
 
 ### Set environment variables to a Frontend file .env
 
