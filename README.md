@@ -76,3 +76,91 @@ cd ..
 node index.js
 ```
 
+## Directory structure:
+
+```
+└── edwinmoreno77-Calendar-App/
+    ├── README.md
+    ├── index.js
+    ├── package.json
+    ├── .env.example
+    ├── assets/
+    ├── controllers/
+    │   ├── auth.js
+    │   └── events.js
+    ├── database/
+    │   └── config.js
+    ├── frontend/
+    │   ├── index.html
+    │   ├── package.json
+    │   ├── vite.config.js
+    │   ├── yarn.lock
+    │   ├── .env.production
+    │   ├── .env.template
+    │   ├── .gitignore
+    │   ├── build/
+    │   │   ├── index.html
+    │   │   └── assets/
+    │   │       ├── index-17bc3ac2.js
+    │   │       └── index-ffa1a8bc.css
+    │   └── src/
+    │       ├── CalendarApp.jsx
+    │       ├── main.jsx
+    │       ├── styles.css
+    │       ├── api/
+    │       │   ├── calendarApi.js
+    │       │   └── index.js
+    │       ├── auth/
+    │       │   ├── index.js
+    │       │   └── pages/
+    │       │       ├── LoginPage.css
+    │       │       └── LoginPage.jsx
+    │       ├── calendar/
+    │       │   ├── index.js
+    │       │   ├── components/
+    │       │   │   ├── CalendarEvent.jsx
+    │       │   │   ├── CalendarModal.jsx
+    │       │   │   ├── FabAddNew.jsx
+    │       │   │   ├── FabDelete.jsx
+    │       │   │   └── Navbar.jsx
+    │       │   └── pages/
+    │       │       └── CalendarPage.jsx
+    │       ├── helpers/
+    │       │   ├── calendarLocalizer.js
+    │       │   ├── convertEventsToDateEvents.js
+    │       │   ├── getEnvVariables.js
+    │       │   ├── getMessages.js
+    │       │   └── index.js
+    │       ├── hooks/
+    │       │   ├── index.js
+    │       │   ├── useAuthStore.js
+    │       │   ├── useCalendarStore.js
+    │       │   ├── useForm.js
+    │       │   └── useUiStore.js
+    │       ├── routes/
+    │       │   ├── AppRouter.jsx
+    │       │   └── index.js
+    │       └── store/
+    │           ├── index.js
+    │           ├── store.js
+    │           ├── auth/
+    │           │   └── authSlice.js
+    │           ├── calendar/
+    │           │   └── calendarSlice.js
+    │           └── ui/
+    │               └── uiSlice.js
+    ├── helpers/
+    │   ├── isDate.js
+    │   └── jwt.js
+    ├── middlewares/
+    │   ├── validate-fields.js
+    │   └── validate-jwt.js
+    ├── models/
+    │   ├── Event.js
+    │   └── UserModel.js
+    └── routes/
+        ├── auth.js
+        └── events.js
+
+```
+
